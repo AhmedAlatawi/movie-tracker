@@ -130,7 +130,7 @@ export const deleteUserFavorite = (userId, movieId) => {
       }
     })
       .then(response => response.json())
-      // .then(response => console.log(response))
+
       .then(response => dispatch(deleteFavorite(movieId)))
   }
 }
